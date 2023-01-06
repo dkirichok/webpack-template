@@ -6,9 +6,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     mode: 'production',
 
+    // basedir
+    context: path.resolve(__dirname, 'src'),
+
     // devserver
     devServer: {
-        contentBase: './dist',
+        static: './',
         open: true,
         hot: true
     },
@@ -31,7 +34,7 @@ module.exports = {
         rules: [
             {
                 test: /\.scss$/,
-                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
                 exclude: /node_modules/
             },
             {
@@ -45,8 +48,8 @@ module.exports = {
     // plugins
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "[name].css",
-            chunkFilename: "[id].css"
+            filename: '[name].css',
+            chunkFilename: '[id].css'
         }),
 
         // create dist/index.html

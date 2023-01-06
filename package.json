@@ -4,26 +4,26 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack serve --open",
+    "start": "webpack serve",
     "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "",
   "devDependencies": {
-    "@babel/core": "^7.20.7",
+    "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
-    "babel-loader": "^9.1.0",
+    "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
-    "eslint": "^7.26.0",
+    "eslint": "^7.32.0",
     "html-webpack-plugin": "^4.5.2",
     "mini-css-extract-plugin": "^2.7.2",
     "prettier": "^2.3.0",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
-    "webpack": "^5.37.1",
-    "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
   },
   "prettier": {
     "trailingComma": "es5",
