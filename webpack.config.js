@@ -6,9 +6,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     mode: 'production',
 
-    // basedir
-    context: path.resolve(__dirname, 'src'),
-
     // devserver
     devServer: {
         contentBase: './dist',
